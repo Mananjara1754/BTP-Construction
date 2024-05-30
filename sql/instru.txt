@@ -1,0 +1,48 @@
+$date1 = new DateTime('2024-05-15');
+$date2 = new DateTime('2024-05-10');
+
+$interval = $date1->diff($date2);
+echo $interval->format('%R%a jours');
+
+$date1 = new DateTime('2024-05-15');
+$date2 = new DateTime('2020-05-10');
+
+$interval = $date1->diff($date2);
+$years = $interval->y;
+
+echo "La différence est de $years années.";
+
+SELECT EXTRACT(YEAR FROM TIMESTAMP '2024-05-15' - TIMESTAMP '2020-05-10') AS difference_annees;
+
+
+$string = "Hello123World";
+
+if (preg_match('/\d/', $string)) {
+    echo "La chaîne contient au moins un chiffre.";
+} else {
+    echo "La chaîne ne contient aucun chiffre.";
+}
+
+
+Bissextile 
+$annee = 2024;
+
+if (date('L', strtotime("$annee-01-01"))) {
+    echo "$annee est une année bissextile.";
+} else {
+    echo "$annee n'est pas une année bissextile.";
+}
+
+SELECT 
+    CASE 
+        WHEN EXTRACT(YEAR FROM TIMESTAMP '2024-01-01') % 4 = 0 
+            AND (EXTRACT(YEAR FROM TIMESTAMP '2024-01-01') % 100 != 0 
+            OR EXTRACT(YEAR FROM TIMESTAMP '2024-01-01') % 400 = 0) 
+            THEN '2024 est une année bissextile' 
+        ELSE '2024 n\'est pas une année bissextile' 
+    END;
+
+arrondissement 
+$nombre = 123.456789;
+$nombre_tronque = (float)round($nombre, 2);
+echo $nombre_tronque; // Affiche "123.45"

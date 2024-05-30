@@ -1,0 +1,118 @@
+
+      #delete{
+        color:#1e1e33;
+    }
+    #delete:hover{
+        color:red;
+        transition: 0.3s;
+    }
+    #update{
+        color:#1e1e33;
+    }
+    #update:hover{
+        color:#6cc57c;
+        transition:0.3s;
+    }
+    .function-crud{
+        text-align: center;width: 50px;
+    }
+  .btn{
+    color:white;
+    font-size: smaller;
+    background-color: #1e1e33;
+    border: none;
+  }
+  .btn:hover{
+    color:white;
+    font-size: smaller;
+    background-color: #1e1e33;
+    border: none;
+  }
+
+
+  th{
+    font-size: smaller;
+  }
+  #left_menu{
+    color:#1e1e33;
+  }
+  #left_menu:hover{
+    background-color:#6cc57c;
+    color:white;
+    transition:0.4s;
+  }
+  #main{
+    padding: 30px;
+    background-color: white;
+  }
+  #body{  
+    background-color: white;
+    height: 100%;
+    border-radius: 37px;
+    padding: 55px;
+  }
+  #bouton{
+    background-color: #4FADC0;
+    border: none;
+    width: auto;
+    padding: 10px;
+  }
+  #bouton:hover{
+    background-color:#193948;
+    transition:0.5s;
+  }
+  .btn a{
+    background-color: #6cc57c;
+    padding: 4px 11px;
+    /* border: double; */
+    color: white;
+  }
+  .btn strong{
+    padding: 4px 11px;
+  }
+  /* @font-face {
+    font-family: "Poppins";
+    src: url("assets/plugins/fonts/Product-Sans-Regular.ttf") format("truetype");
+  }  */
+body{
+  /* font-family: "Poppins"; */
+    font-family: system-ui;
+    font-weight: 483;
+}
+#unique{
+  color:#1e1e33;
+}
+#unique:hover{
+  color:#1e1e33;
+}
+.maison{
+    border: 1px solid #d3cfcf;
+    width: 222px;
+    padding: 27px;
+    height: 175px;
+    border-radius: 17px;
+    background-color: #6cc57c;
+    color: white;
+  }
+  @keyframes successAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Animation pour l'erreur */
+@keyframes errorAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+.succes {
+    animation: successAnimation 1s ease-in-out;
+    background-color: green; /* Couleur verte pour le succès */
+}
+
+/* Style pour l'animation d'erreur */
+.erreur {
+    animation: errorAnimation 1s ease-in-out;
+    background-color: red; /* Couleur rouge pour l'erreur */
+}

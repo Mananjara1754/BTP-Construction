@@ -1,0 +1,30 @@
+Scenario
+5 - mangataka bon commande raha mbola tsisy
+fonction ampiasaina : demande_proformat($date = null)
+modele : model_service
+nb : madndefa message any @ fournisseur, 
+    misy message azo avy am fournisseur
+
+1 - manao demande besoin service 
+fonction ampiasaina : insert_besoin_service($id_article, $qte, $livraison_partielle, $etat) 
+modele : model_service
+
+4 - Mijery Moins disant 
+fonction ampiasaina : function moins_disant()
+fomba fibouclena azy jerena ao am controlleur_test
+modele : model_bon_commande
+
+3 - Lister proformat :
+fonction ampiasaina : all_proformat()
+modele : model_service
+
+2 - Valider besoin :
+tokony hisy liste besoin_non_valide
+vue tifirina : besoin_non_valide
+fonction ampiasaina : valider_besoin_service($id_besoin_service)
+modele : model_service
+nb : misy exception raha tsy ampy total qte am proformat
+
+6 - bon de commande 
+fonction ampiasaina : all_bon_commande()
+modele : model_bon_commande
